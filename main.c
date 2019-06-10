@@ -309,7 +309,7 @@ void printModel(char varNames[10][25], double modelMetrics[17], double * coeffic
   printf("\n  Source |       SS       df       MS                  Number of obs = %7d", (int)modelMetrics[0]);
   printf("\n---------+------------------------------               F(%3d,%6d) =  %6.5g", (int)modelMetrics[1], (int)modelMetrics[2], modelMetrics[3]);
   printf("\n   Model |  %10.9g %5d  %10.9g               Prob > F      =  %6.4lf", modelMetrics[4], (int)modelMetrics[5], modelMetrics[6], modelMetrics[7]);
-  printf("\nResidual |  %10.9g %5d  %10.9g               Prob > F      =  %6.4lf", modelMetrics[8], (int)modelMetrics[9], modelMetrics[10], modelMetrics[11]);
+  printf("\nResidual |  %10.9g %5d  %10.9g               R-squared     =  %6.4lf", modelMetrics[8], (int)modelMetrics[9], modelMetrics[10], modelMetrics[11]);
   printf("\n---------+------------------------------               Adj R-squared =  %6.4lf", modelMetrics[12]);
   printf("\n   Total |  %10.9g %5d  %10.9g               Root MSE      =  %6.5g\n", modelMetrics[13], (int)modelMetrics[14], modelMetrics[15], modelMetrics[16]);
 
