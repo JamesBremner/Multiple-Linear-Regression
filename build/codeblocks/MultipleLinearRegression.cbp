@@ -7,7 +7,8 @@
 		<Option compiler="gcc_v83" />
 		<Build>
 			<Target title="Debug">
-				<Option output="../bin/MultipleLinearRegression" prefix_auto="1" extension_auto="1" />
+				<Option output="../../bin/MultipleLinearRegression" prefix_auto="1" extension_auto="1" />
+				<Option working_dir="../..bin" />
 				<Option object_output="obj/Debug/" />
 				<Option type="1" />
 				<Option compiler="gcc_v83" />
@@ -32,7 +33,15 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
-		<Unit filename="main.cpp" />
+		<Linker>
+			<Add option="-m64" />
+			<Add option="-static" />
+		</Linker>
+		<Unit filename="../../src/dist.cpp" />
+		<Unit filename="../../src/dist.h" />
+		<Unit filename="../../src/main.cpp" />
+		<Unit filename="../../src/matrix.cpp" />
+		<Unit filename="../../src/matrix.h" />
 		<Extensions>
 			<code_completion />
 			<envvars />
